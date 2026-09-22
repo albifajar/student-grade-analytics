@@ -19,7 +19,6 @@ require_once __DIR__ . '/analytics.php';
 // 1. Data Ingestion (Phase 1 & Phase 3)
 // -------------------------------------------------------------
 $pdo = getDatabaseConnection();
-var_dump($pdo);
 $sourceInfo = getDataSourceInfo($pdo);
 $rawStudents = getRawStudents($pdo);
 $rawGrades = getRawGrades($pdo);
